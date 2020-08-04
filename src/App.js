@@ -9,7 +9,6 @@ class App extends React.Component {
       <div>
           <Layout>
             <BurgerBuilder />
-            <h1>Hallo ...</h1>
           </Layout>
       </div>
     );
