@@ -6,7 +6,7 @@ import Aux from '../../../hoc/Aux';
 const Modal = (props) => {
     return (
         <Aux>
-             <Backdrop show={props.show} />
+             <Backdrop show={props.show} clicked={props.modalClosed} />
             <div 
                 style={{
                     transform: props.show ? 'translateY(0)' : 'translateY(-100vh)',
