@@ -6,13 +6,14 @@ import Backdrop from './../../UI/Backdrop/Backdrop';
 import Aux from './../../../hoc/Aux';
 
 const SideDrawer = (props) => {
+    console.log('[sideDrawer.js]', props);
+
     let attachedClass = [classes.SideDrawer, classes.Close];
 
     if(props.open){
-        attachedClass = [classes.SideDrawer, classes.Open]
+        attachedClass = [classes.SideDrawer, classes.Open];
     }
 
-    console.log('SideDrawer', attachedClass, props);
     
     return (
         <Aux>

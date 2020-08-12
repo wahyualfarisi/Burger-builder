@@ -19,7 +19,7 @@
 }
 
 @media(max-width: 499px){
-    .DeskropOnly {
+    .DesktopOnly {
         display: none;
     }
 }
