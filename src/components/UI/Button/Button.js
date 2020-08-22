@@ -6,6 +6,7 @@ const Button = (props) => {
     console.log('[Button.js] ', props, classes)
     return (
         <button 
+            disabled={props.disabled}
             onClick={props.clicked}
             className={[classes.Button, classes[props.btnType]].join(' ')} >
             {props.children}
