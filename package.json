@@ -1,5 +1,5 @@
 {
-  "homepage": "https://wahyualfarisi.github.io/Burger-builder",
+  
   "name": "burger-builder",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +14,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
+  "homepage": "https://wahyualfarisi.github.io/Burger-builder",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -36,6 +37,7 @@
       "last 1 safari version"
     ]
   },
+  
   "devDependencies": {
     "gh-pages": "^3.1.0"
   }
