@@ -4,7 +4,6 @@ import classes from './NavigationItems.module.css';
 import { withRouter  } from 'react-router-dom';
 
 const NavigationItems = (props) => {
-    console.log(props, 'hallo')
     return (
         <ul className={classes.NavigationItems}>
             <NavigationItem link="/" exact> Burder Builder </NavigationItem>
