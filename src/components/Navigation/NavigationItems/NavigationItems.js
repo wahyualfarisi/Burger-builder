@@ -7,10 +7,12 @@ const NavigationItems = (props) => {
     return (
         <ul className={classes.NavigationItems}>
             <NavigationItem link="/" exact> Burder Builder </NavigationItem>
-            <NavigationItem link="/orders"> Orders </NavigationItem>
-            <NavigationItem link="/auth"> Authenticated </NavigationItem>
+            {props.isAuth ? <NavigationItem link="/orders"> Orders </NavigationItem> : null } 
+            {!props.isAuth 
+                ? <NavigationItem link="/auth"> Authenticated </NavigationItem>
+                : <NavigationItem link="/logout"> Logout </NavigationItem>  }  
         </ul>
-    )
+    );
 }
 
 export default withRouter(NavigationItems) 

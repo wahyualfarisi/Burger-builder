@@ -21,7 +21,7 @@ const SideDrawer = (props) => {
             <div className={attachedClass.join(' ')}>
                 <Logo />
                 <nav>
-                    <NavigationItems />     
+                    <NavigationItems isAuth={props.isAuth} />     
                 </nav>
             </div>
         </Aux>
