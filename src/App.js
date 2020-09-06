@@ -4,6 +4,7 @@ import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
 import Checkout from './containers/Checkout/Checkout';
 import { Route, Switch, Redirect  } from 'react-router-dom';
 import Orders from './containers/Orders/Orders';
+import Auth from './containers/Auth/Auth';
 
 
 
@@ -18,6 +19,7 @@ class App extends React.Component {
               <Route path="/" exact component={BurgerBuilder} />
               <Route path="/checkout"  component={Checkout} />
               <Route path="/orders" component={Orders} />
+              <Route path="/auth" component={Auth} />
               <Redirect to="/" />
             </Switch>
           </Layout>
