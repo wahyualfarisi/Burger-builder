@@ -20,8 +20,8 @@ const reducer = (state = initialState, action) => {
         case actionTypes.AUTH_SUCCESS: 
             return {
                 ...state,
-                token: action.authData.idToken,
-                userId: action.authData.localId,
+                token: action.token,
+                userId: action.userId,
                 error: null,
                 loading: false
             }

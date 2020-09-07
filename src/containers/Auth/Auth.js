@@ -138,7 +138,7 @@ class Auth extends Component {
             }
         }
 
-        console.log('ready to order', this.props.readyToOrder)
+        
         return (
             <div className={classes.Auth}>
                 {authRedirect}
