@@ -1,5 +1,7 @@
 ## Burger Builder Application
 
+![alt text](https://github.com/wahyualfarisi/Burger-builder/blob/master/sc/burger_builder.png?raw=true)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
