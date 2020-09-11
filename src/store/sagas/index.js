@@ -5,16 +5,16 @@ import { initIngredientsSaga } from './burgerBuilder';
 import { purchaseBurgerSaga, fetchOrderSaga } from './order';
 
 function* whatcAuth() {
-    yield takeEvery( actionTypes.AUTH_CHECK_TIMEOUT, checkauthTimeoutSaga )
-    yield takeEvery( actionTypes.AUTH_INITIATE_LOGOUT, logoutSaga );
-    yield takeEvery( actionTypes.AUTH_USER, authUser )
-    yield takeEvery( actionTypes.AUTH_CHECK_STATE, authCheckStateSaga )
+    yield all([
+         takeEvery( actionTypes.AUTH_CHECK_TIMEOUT, checkauthTimeoutSaga ),
+         takeEvery( actionTypes.AUTH_INITIATE_LOGOUT, logoutSaga ),
+         takeEvery( actionTypes.AUTH_USER, authUser ),
+         takeEvery( actionTypes.AUTH_CHECK_STATE, authCheckStateSaga )
+    ]);
 }
 
 function* whatcBurger(){
     yield takeEvery( actionTypes.SET_INIT_INGREDIENTS, initIngredientsSaga );
-
-
 }
 
 function* whatcOrder(){
