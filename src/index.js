@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import { Provider  } from 'react-redux';
 import thunk from 'redux-thunk';
@@ -34,9 +34,9 @@ sagaMiddleware.run(rootSaga);
 
 const app = (
   <Provider store={store}>
-    <BrowserRouter basename="/">
+    <HashRouter basename="/">
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </Provider>
 )
 
