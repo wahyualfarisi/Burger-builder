@@ -31,7 +31,7 @@ const store = createStore( rootReducers, composeEnhancers(
 );
 
 sagaMiddleware.run(rootSaga);
-
+console.log('this is app using hook')
 const app = (
   <Provider store={store}>
     <HashRouter basename="/">
